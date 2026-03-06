@@ -152,6 +152,7 @@ class BookSearchController extends Controller
                         'author' => $doc['book']->author,
                         'publisher' => $doc['book']->publisher,
                         'publication_year' => $doc['book']->publication_year,
+                        'description' => $doc['book']->description,
                         'similarity_score' => round($similarityScore, 6)
                     ];
                 }
